@@ -17,6 +17,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="resources\Input_CountInversions10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Input_CountInversions100000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="resources\Input_Sorting10.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
