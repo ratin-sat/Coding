@@ -6,10 +6,28 @@ namespace AlgorithmsIlluminatedTest
     public class KaratsubaTest
     {
         [Fact]
-        public void Karatsuba_Sample()
+        public void Karatsuba_SanityCheck()
         {
             var actual = Karatsuba.Solve("5678", "1234");
             Assert.Equal("7006652", actual);
+        }
+
+        [Theory]
+        [InlineData("99999", "9999", "999890001")]
+        [InlineData("40354", "79041204", "3189628746216")]
+        public void Karatsuba_Random(string x, string y, string expected)
+        {
+            var actual = Karatsuba.Solve(x, y);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("5794112457490524538595502745245", "1", "5794112457490524538595502745245")]
+        [InlineData("0", "4521755790520361565", "0")]
+        public void Karatsuba_EdgeCase(string x, string y, string expected)
+        {
+            var actual = Karatsuba.Solve(x, y);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
