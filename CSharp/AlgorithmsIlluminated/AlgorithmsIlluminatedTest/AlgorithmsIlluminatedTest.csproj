@@ -16,4 +16,25 @@
     <ProjectReference Include="..\AlgorithmsIlluminated\AlgorithmsIlluminated.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="resources\Input_Sorting10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Input_Sorting100.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Input_Sorting10000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Output_Sorting10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Output_Sorting100.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Output_Sorting10000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
