@@ -1,5 +1,4 @@
-﻿using System;
-using AlgorithmsIlluminated;
+﻿using AlgorithmsIlluminated;
 using AlgorithmsIlluminated.DataModel;
 using Xunit;
 
@@ -15,7 +14,7 @@ namespace AlgorithmsIlluminatedTest
             var c = new Point2D(2.0425, 1.20125);
             var d = new Point2D(7.0025, 4.26125);
             var input = new[] { a, b, c, d };
-            var expected = new Tuple<Point2D, Point2D>(b, c);
+            var expected = (b, c);
             var actual = ClosestPair.Solve(input);
             Assert.Equal(expected, actual);
         }
