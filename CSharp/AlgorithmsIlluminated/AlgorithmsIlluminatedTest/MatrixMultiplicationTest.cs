@@ -11,7 +11,7 @@ namespace AlgorithmsIlluminatedTest
         {
             var x = new Matrix(new[,] { { 1, 2 }, { 3, 4 } });
             var y = new Matrix(new[,] { { 5, 6 }, { 7, 8 } });
-            var expected = new Matrix(new[,] { { 19, 22 }, { 43, 55 } });
+            var expected = new Matrix(new[,] { { 19, 22 }, { 43, 50 } });
             var actual = MatrixMultiplication.Solve(x, y);
             Assert.Equal(expected, actual);
         }
