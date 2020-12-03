@@ -15,7 +15,7 @@
         // Output: true if there is an index i such that A[i] = i, otherwise false
         private static bool IdenticalIndexBinarySearch(int[] a, int l, int r)
         {
-            if (l <= r)
+            if (l >= r)
             {
                 return l == a[l];
             }
