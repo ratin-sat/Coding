@@ -11,17 +11,21 @@ namespace AlgorithmsIlluminatedTest
         {
             var x = new Matrix(new[,] { { 1, 2 }, { 3, 4 } });
             var y = new Matrix(new[,] { { 5, 6 }, { 7, 8 } });
-            var expected = new Matrix(new[,] { { 19, 22 }, { 43, 55 } });
+            var expected = new Matrix(new[,] { { 19, 22 }, { 43, 50 } });
             var actual = MatrixMultiplication.Solve(x, y);
             Assert.Equal(expected, actual);
         }
 
-        [Fact]
-        public void MatrixMultiplication_Random()
+        [Theory]
+        [InlineData(@"resources\MatrixXYZ_Mult4x4.txt")]
+        [InlineData(@"resources\MatrixXYZ_Mult16x16.txt")]
+        [InlineData(@"resources\MatrixXYZ_Mult64x64.txt")]
+        public void MatrixMultiplication_Random(string filepath)
         {
-            var x = new Matrix(new[,] { { 6, -2, 5, 2 }, { 3, 7, 1, -3 }, { -8, 4, 3, 2 }, { 0, 4, 5, -7 } });
-            var y = new Matrix(new[,] { { 1, -2, -8, 1 }, { -3, 4, -2, 6 }, { 2, -1, 3, 5 }, { 6, 1, -1, -4 } });
-            var expected = new Matrix(new[,] { { 34, -23, -31, 11 }, { -34, 18, -32, 62 }, { -2, 31, 63, 23 }, { -44, 4, 14, 77 } });
+            var matrices = TestHelpers.ReadMatricesFromTextFile(filepath);
+            var x = matrices[0];
+            var y = matrices[1];
+            var expected = matrices[2];
             var actual = MatrixMultiplication.Solve(x, y);
             Assert.Equal(expected, actual);
         }

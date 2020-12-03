@@ -6,6 +6,7 @@ namespace AlgorithmsIlluminated
     {
         // Input: Two n x n integer matrices, X and Y
         // Output: The matrix product XY
+        // Assumption: n is a power of 2
         public static Matrix Solve(Matrix x, Matrix y)
         {
             return StraightForwardMatrixMult(x, y);
