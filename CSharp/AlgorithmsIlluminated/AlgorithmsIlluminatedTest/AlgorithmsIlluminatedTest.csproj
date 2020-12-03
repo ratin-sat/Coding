@@ -23,6 +23,12 @@
     <None Update="resources\Input_CountInversions100000.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="resources\Input_Point2D100.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Input_Point2D30.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="resources\Input_Sorting10.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
