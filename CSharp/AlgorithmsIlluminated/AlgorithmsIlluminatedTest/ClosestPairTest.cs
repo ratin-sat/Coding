@@ -14,9 +14,10 @@ namespace AlgorithmsIlluminatedTest
             var c = new Point2D(2.0425, 1.20125);
             var d = new Point2D(7.0025, 4.26125);
             var input = new[] { a, b, c, d };
-            var expected = (b, c);
+            var expected1 = (b, c);
+            var expected2 = (c, b);
             var actual = ClosestPair.Solve(input);
-            Assert.Equal(expected, actual);
+            Assert.True(expected1.Equals(actual) || expected2.Equals(actual));
         }
     }
 }
