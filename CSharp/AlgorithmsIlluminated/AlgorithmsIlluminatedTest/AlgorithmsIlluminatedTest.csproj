@@ -32,6 +32,18 @@
     <None Update="resources\Input_Sorting10000.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="resources\MatrixXYZ_Mult16x16.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\MatrixXYZ_Mult4x4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\MatrixXYZ_Mult5x5.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\MatrixXYZ_Mult64x64.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="resources\Output_Sorting10.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
