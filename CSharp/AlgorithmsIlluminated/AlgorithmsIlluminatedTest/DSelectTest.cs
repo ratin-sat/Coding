@@ -9,9 +9,9 @@ namespace AlgorithmsIlluminatedTest
         [Fact]
         public void DSelect_SanityCheck()
         {
-            var a = new[] { 6, 8, 2, 9 };
+            var a = new[] { 11, 6, 10, 2, 15, 8, 1, 7, 14, 3, 9, 12, 4, 5, 13 };
             var actual = DSelect.Solve(a, 3);
-            Assert.Equal(8, actual);
+            Assert.Equal(3, actual);
         }
 
         [Theory]
