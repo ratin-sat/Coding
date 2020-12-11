@@ -11,6 +11,33 @@ namespace AlgorithmsIlluminatedTest
         public static IEnumerable<T> ReadLineFromTextFile<T>(string filepath, Func<string, T> parser)
             => File.ReadAllLines(filepath).Select(parser);
 
+        public static int[,] Read2DArray(string filepath)
+        {
+            var lines = File.ReadAllLines(filepath);
+
+            // read grid dimensions
+            var dim = lines.First()
+                .Split(Array.Empty<char>(), StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+
+            var a = new int[dim[0], dim[1]];
+
+            // read elements row by row
+            for (var r = 0; r < dim[0]; r++)
+            {
+                var row = lines[r + 1].Split(Array.Empty<char>(), StringSplitOptions.RemoveEmptyEntries)
+                    .Select(int.Parse)
+                    .ToArray();
+                for (var c = 0; c < dim[1]; c++)
+                {
+                    a[r, c] = row[c];
+                }
+            }
+
+            return a;
+        }
+
         public static Matrix[] ReadMatricesFromTextFile(string filepath)
         {
             var lines = File.ReadAllLines(filepath);

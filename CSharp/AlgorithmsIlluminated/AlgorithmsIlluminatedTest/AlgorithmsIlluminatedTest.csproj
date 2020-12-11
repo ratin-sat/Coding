@@ -17,6 +17,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="resources\Grid_Distinct10x10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Grid_Distinct8x8.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Grid_DistinctDecreasing5x5_1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Grid_DistinctDecreasing5x5_2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Grid_DistinctIncreasing5x5_1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Grid_DistinctIncreasing5x5_2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="resources\Input_CountInversions10.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
