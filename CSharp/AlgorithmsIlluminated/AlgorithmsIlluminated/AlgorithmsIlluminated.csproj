@@ -46,7 +46,12 @@
   <ItemGroup>
     <Compile Include="ClosestPair.cs" />
     <Compile Include="CountInversions.cs" />
+    <Compile Include="DataModel\Edge.cs" />
+    <Compile Include="DataModel\Graph.cs" />
+    <Compile Include="DataModel\GraphFactory.cs" />
+    <Compile Include="DataModel\GraphSearchRecord.cs" />
     <Compile Include="DataModel\Point2D.cs" />
+    <Compile Include="DataModel\Vertex.cs" />
     <Compile Include="DSelect.cs" />
     <Compile Include="GridLocalMinimum.cs" />
     <Compile Include="HasIdenticalIndexValue.cs" />
