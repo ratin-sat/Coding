@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BreadthFirstSearch.cs" />
     <Compile Include="ClosestPair.cs" />
     <Compile Include="CountInversions.cs" />
     <Compile Include="DataModel\Edge.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="DataModel\GraphSearchRecord.cs" />
     <Compile Include="DataModel\Point2D.cs" />
     <Compile Include="DataModel\Vertex.cs" />
+    <Compile Include="DepthFirstSearch.cs" />
     <Compile Include="DSelect.cs" />
     <Compile Include="GridLocalMinimum.cs" />
     <Compile Include="HasIdenticalIndexValue.cs" />
@@ -63,6 +65,10 @@
     <Compile Include="QuickSort.cs" />
     <Compile Include="RSelect.cs" />
     <Compile Include="SecondLargest.cs" />
+    <Compile Include="ShortestPath.cs" />
+    <Compile Include="StronglyConnectedComponent.cs" />
+    <Compile Include="TopologicalSort.cs" />
+    <Compile Include="UndirectedConnectedComponent.cs" />
     <Compile Include="UnimodalMax.cs" />
   </ItemGroup>
   <ItemGroup>
