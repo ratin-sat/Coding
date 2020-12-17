@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Collections.Generic;
 using AlgorithmsIlluminated.DataModel;
 
 namespace AlgorithmsIlluminatedTest
@@ -71,6 +71,22 @@ namespace AlgorithmsIlluminatedTest
             }
 
             return matrices;
+        }
+
+        public static Graph ReadUndirectedGraphFromEdgesListFile(string filepath)
+        {
+            var edges = File.ReadAllLines(filepath)
+                .Select(l => l.Split(Array.Empty<char>(), StringSplitOptions.RemoveEmptyEntries))
+                .Select(a => (int.Parse(a[0]), int.Parse(a[1]), 1));
+            return GraphFactory.CreateUndirectedGraph(edges);
+        }
+
+        public static Graph ReadDirectedGraphFromEdgesListFile(string filepath)
+        {
+            var edges = File.ReadAllLines(filepath)
+                .Select(l => l.Split(Array.Empty<char>(), StringSplitOptions.RemoveEmptyEntries))
+                .Select(a => (int.Parse(a[0]), int.Parse(a[1]), 1));
+            return GraphFactory.CreateDirectedGraph(edges);
         }
     }
 }
