@@ -58,6 +58,7 @@
     <Compile Include="DSelect.cs" />
     <Compile Include="GridLocalMinimum.cs" />
     <Compile Include="HasIdenticalIndexValue.cs" />
+    <Compile Include="Heap.cs" />
     <Compile Include="Karatsuba.cs" />
     <Compile Include="MatrixMultiplication.cs" />
     <Compile Include="MergeSort.cs" />
