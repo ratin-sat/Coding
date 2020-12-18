@@ -1,4 +1,5 @@
-﻿using AlgorithmsIlluminated.DataModel;
+﻿using System.Linq;
+using AlgorithmsIlluminated.DataModel;
 
 namespace AlgorithmsIlluminated
 {
@@ -10,7 +11,39 @@ namespace AlgorithmsIlluminated
         //   such that for every (v, w) ε E, f(v) < f(w)
         public static void Solve(Graph g)
         {
+            // mark all vertices as unexplored
+            var explored = g.Vertices
+                .Select(v => new { Vertex = v, Explored = false })
+                .ToDictionary(x => x.Vertex, x => x.Explored);
 
+            var curLabel = g.Vertices.Count();
+
+            // mark every vertex reachable from s as explored and assign f-value
+            void DFSTopo(Vertex s)
+            {
+                // mark s as explored
+                explored[s] = true;
+
+                foreach (var v in g.AdjacencyList[s].Select(e => e.V))
+                {
+                    if (!explored[v])
+                    {
+                        DFSTopo(v);
+                    }
+                }
+
+                // s's position in ordering
+                g.TopologicalOrder[s] = curLabel;
+                curLabel = curLabel - 1;
+            }
+
+            foreach (var v in g.Vertices)
+            {
+                if (!explored[v])
+                {
+                    DFSTopo(v);
+                }
+            }
         }
     }
 }
