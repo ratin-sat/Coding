@@ -54,6 +54,7 @@
     <Compile Include="DataModel\Point2D.cs" />
     <Compile Include="DataModel\Vertex.cs" />
     <Compile Include="DepthFirstSearch.cs" />
+    <Compile Include="Dijkstra.cs" />
     <Compile Include="DSelect.cs" />
     <Compile Include="GridLocalMinimum.cs" />
     <Compile Include="HasIdenticalIndexValue.cs" />

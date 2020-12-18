@@ -17,6 +17,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="resources\Graph_AdjList4V.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Graph_AdjList8V.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="resources\Graph_DAG_EdgesList4V.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
