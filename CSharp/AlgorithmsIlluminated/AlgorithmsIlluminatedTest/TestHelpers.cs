@@ -88,5 +88,24 @@ namespace AlgorithmsIlluminatedTest
                 .Select(a => (int.Parse(a[0]), int.Parse(a[1]), 1));
             return GraphFactory.CreateDirectedGraph(edges);
         }
+
+        public static Graph ReadDirectedGraphFromAdjacenciesListFile(string filepath)
+        {
+            var edges = File.ReadAllLines(filepath)
+                .Select(line => line.Split(Array.Empty<char>(), StringSplitOptions.RemoveEmptyEntries))
+                .SelectMany(
+                    line => line.Skip(1),
+                    (line, adj) =>
+                    {
+                        var id = int.Parse(line[0]);
+                        var e = adj.Split(',');
+                        var v = int.Parse(e[0]);
+                        var l = int.Parse(e[1]);
+
+                        return (id, v, l);
+                    });
+
+            return GraphFactory.CreateDirectedGraph(edges);
+        }
     }
 }
