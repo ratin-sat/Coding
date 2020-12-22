@@ -53,6 +53,8 @@
     <Compile Include="DataModel\GraphSearchRecord.cs" />
     <Compile Include="DataModel\Point2D.cs" />
     <Compile Include="DataModel\Vertex.cs" />
+    <Compile Include="DataStructure\SearchTree.cs" />
+    <Compile Include="DataStructure\TreeNode.cs" />
     <Compile Include="DepthFirstSearch.cs" />
     <Compile Include="Dijkstra.cs" />
     <Compile Include="DSelect.cs" />
