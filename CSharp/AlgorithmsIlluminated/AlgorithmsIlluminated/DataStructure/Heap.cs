@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AlgorithmsIlluminated
+namespace AlgorithmsIlluminated.DataStructure
 {
     public class Heap<T> where T : IComparable<T>
     {
@@ -33,6 +33,12 @@ namespace AlgorithmsIlluminated
         public void Delete(T x)
         {
 
+        }
+
+        // return the number of objects in Heap
+        public int Count()
+        {
+            throw new NotImplementedException();
         }
     }
 }
