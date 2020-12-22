@@ -1,4 +1,4 @@
-﻿using System;
+﻿using AlgorithmsIlluminated.DataStructure;
 
 namespace AlgorithmsIlluminated
 {
@@ -8,7 +8,17 @@ namespace AlgorithmsIlluminated
         // Output: array with the same integers, sorted from smallest to largest
         public static int[] Solve(int[] a)
         {
-            throw new NotImplementedException();
+            var n = a.Length;
+            var b = new int[n];
+
+            var h = new Heap<int>();
+            h.Heapify(a);
+            for (var i = 0; i < n; i++)
+            {
+                b[i] = h.ExtractMin();
+            }
+
+            return b;
         }
     }
 }
