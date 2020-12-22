@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AlgorithmsIlluminated
+namespace AlgorithmsIlluminated.DataStructure
 {
     public class Heap<T> where T : IComparable<T>
     {
