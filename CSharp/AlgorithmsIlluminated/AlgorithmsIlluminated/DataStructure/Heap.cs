@@ -34,5 +34,11 @@ namespace AlgorithmsIlluminated.DataStructure
         {
 
         }
+
+        // return the number of objects in Heap
+        public int Count()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
