@@ -80,6 +80,12 @@
     <None Update="resources\Input_CountInversions100000.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="resources\Input_MedianMaintenance10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\Input_MedianMaintenance10000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="resources\Input_Point2D100.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

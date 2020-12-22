@@ -64,6 +64,7 @@
     <Compile Include="HeapSort.cs" />
     <Compile Include="Karatsuba.cs" />
     <Compile Include="MatrixMultiplication.cs" />
+    <Compile Include="MedianMaintenance.cs" />
     <Compile Include="MergeSort.cs" />
     <Compile Include="DataModel\Matrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
