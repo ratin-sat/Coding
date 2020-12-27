@@ -53,6 +53,7 @@
     <Compile Include="DataModel\GraphFactory.cs" />
     <Compile Include="DataModel\GraphSearchRecord.cs" />
     <Compile Include="DataModel\Point2D.cs" />
+    <Compile Include="DataModel\TreeFactory.cs" />
     <Compile Include="DataModel\Vertex.cs" />
     <Compile Include="DataStructure\SearchTree.cs" />
     <Compile Include="DepthFirstSearch.cs" />
