@@ -47,6 +47,7 @@
     <Compile Include="BreadthFirstSearch.cs" />
     <Compile Include="ClosestPair.cs" />
     <Compile Include="CountInversions.cs" />
+    <Compile Include="DataModel\BinaryTree.cs" />
     <Compile Include="DataModel\BinaryTreeNode.cs" />
     <Compile Include="DataModel\Edge.cs" />
     <Compile Include="DataModel\Graph.cs" />
