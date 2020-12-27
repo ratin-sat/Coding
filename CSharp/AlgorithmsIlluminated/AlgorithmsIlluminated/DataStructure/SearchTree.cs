@@ -6,6 +6,14 @@ namespace AlgorithmsIlluminated.DataStructure
 {
     public class SearchTree<T> where T : IComparable<T>
     {
+        // root node
+        public BinaryTreeNode<T> Root { get; private set; }
+
+        public SearchTree(BinaryTreeNode<T> root)
+        {
+            this.Root = root;
+        }
+
         // return node with key k if such node exists, otherwise report "none"
         public BinaryTreeNode<T> Search(T k)
         {
