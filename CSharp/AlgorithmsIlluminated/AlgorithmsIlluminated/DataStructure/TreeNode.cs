@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace AlgorithmsIlluminated.DataStructure
+﻿namespace AlgorithmsIlluminated.DataStructure
 {
-    public class TreeNode<T> where T : IComparable<T>
+    public class TreeNode<T>
     {
         public T Content { get; }
 
