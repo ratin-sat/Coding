@@ -1,38 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
+using AlgorithmsIlluminated.DataModel;
 
 namespace AlgorithmsIlluminated.DataStructure
 {
     public class SearchTree<T> where T : IComparable<T>
     {
         // return node with key k if such node exists, otherwise report "none"
-        public TreeNode<T> Search(T k)
+        public BinaryTreeNode<T> Search(T k)
         {
             throw new NotImplementedException();
         }
 
         // return node with the smallest key
-        public TreeNode<T> Min()
+        public BinaryTreeNode<T> Min()
         {
             throw new NotImplementedException();
         }
 
         // return node with the largest key
-        public TreeNode<T> Max()
+        public BinaryTreeNode<T> Max()
         {
             throw new NotImplementedException();
         }
 
         // given a node n in the search tree, return node with the next-smallest key
         // if n has the minimum key, report "none"
-        public TreeNode<T> Predecessor(TreeNode<T> n)
+        public BinaryTreeNode<T> Predecessor(BinaryTreeNode<T> n)
         {
             throw new NotImplementedException();
         }
 
         // given a node n in the search tree, return node with the next-largest key
         // if n has the maximum key, report "none"
-        public TreeNode<T> Successor(TreeNode<T> n)
+        public BinaryTreeNode<T> Successor(BinaryTreeNode<T> n)
         {
             throw new NotImplementedException();
         }
@@ -56,7 +57,7 @@ namespace AlgorithmsIlluminated.DataStructure
         }
 
         // return node in the search tree with the ith-smallest key
-        public TreeNode<T> Select(int i)
+        public BinaryTreeNode<T> Select(int i)
         {
             throw new NotImplementedException();
         }

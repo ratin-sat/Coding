@@ -47,6 +47,7 @@
     <Compile Include="BreadthFirstSearch.cs" />
     <Compile Include="ClosestPair.cs" />
     <Compile Include="CountInversions.cs" />
+    <Compile Include="DataModel\BinaryTreeNode.cs" />
     <Compile Include="DataModel\Edge.cs" />
     <Compile Include="DataModel\Graph.cs" />
     <Compile Include="DataModel\GraphFactory.cs" />
@@ -54,7 +55,6 @@
     <Compile Include="DataModel\Point2D.cs" />
     <Compile Include="DataModel\Vertex.cs" />
     <Compile Include="DataStructure\SearchTree.cs" />
-    <Compile Include="DataStructure\TreeNode.cs" />
     <Compile Include="DepthFirstSearch.cs" />
     <Compile Include="Dijkstra.cs" />
     <Compile Include="DSelect.cs" />
